@@ -14,6 +14,10 @@
         return this.data[key];
     }
 
+    DataStore.prototype.getAll = function () {
+        return this.data;
+    }
+
 
     App.DataStore = DataStore;
     window.App = App;
