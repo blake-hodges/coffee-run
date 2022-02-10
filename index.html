@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link href="index.css" rel="stylesheet" />
 </head>
 <body>
@@ -15,7 +16,7 @@
         </header>
         <section class="p-4 border border-gray-300 mx-5 rounded-md">
             <div>
-                <form>
+                <form data-coffee-order="form">
                     <div class="mb-4">
                         <label for="coffeeOrder" class="block mb-2 text-sm font-medium text-gray-500">Coffee Order</label>
                         <input type="text" id="coffeeOrder" name="coffee" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md" placeholder="Which coffee...?" />
@@ -66,6 +67,7 @@
     <script src="scripts/datastore.js"></script>
     <script src="scripts/truck.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/formhandler.js"></script>
 
 </body>
 </html>
