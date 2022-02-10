@@ -13,16 +13,30 @@
         <header>
             <h1 class="text-3xl my-4 mx-5">CoffeeRun</h1>
         </header>
-        <section class="p-4 border border-gray-300 mx-5">
+        <section class="p-4 border border-gray-300 mx-5 rounded-md">
             <div>
                 <form>
                     <div class="mb-6">
                         <label for="coffeeOrder" class="block mb-2 text-sm font-medium text-gray-500">Coffee Order</label>
-                        <input type="text" id="coffeeOrder" name="coffee" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50" placeholder="Which coffee...?" />
+                        <input type="text" id="coffeeOrder" name="coffee" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md" placeholder="Which coffee...?" />
                     </div>
                     <div class="mb-6">
                         <label for="emailInput" class="block mb-2 text-sm font-medium text-gray-500">Your Email</label>
-                        <input type="email" id="emailInput" name="email" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50" placeholder="yourEmail@domain.com"/>
+                        <input type="email" id="emailInput" name="email" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md" placeholder="yourEmail@domain.com"/>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="radio" name="size" value="small" checked />
+                            <label class="px-1 text-sm font-medium text-gray-500">Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="medium" />
+                            <label class="px-1 text-sm font-medium text-gray-500">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" value="large" />
+                            <label class="px-1 text-sm font-medium text-gray-500">Large</label>
+                        </label>
                     </div>
                 </form>
             </div>
