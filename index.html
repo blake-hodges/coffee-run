@@ -16,15 +16,15 @@
         <section class="p-4 border border-gray-300 mx-5 rounded-md">
             <div>
                 <form>
-                    <div class="mb-6">
+                    <div class="mb-4">
                         <label for="coffeeOrder" class="block mb-2 text-sm font-medium text-gray-500">Coffee Order</label>
                         <input type="text" id="coffeeOrder" name="coffee" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md" placeholder="Which coffee...?" />
                     </div>
-                    <div class="mb-6">
+                    <div class="mb-4">
                         <label for="emailInput" class="block mb-2 text-sm font-medium text-gray-500">Your Email</label>
                         <input type="email" id="emailInput" name="email" class="p-2.5 w-full text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md" placeholder="yourEmail@domain.com"/>
                     </div>
-                    <div>
+                    <div class="mb-4">
                         <div>
                             <input type="radio" name="size" value="small" checked />
                             <label class="px-1 text-sm font-medium text-gray-500">Small</label>
@@ -36,7 +36,20 @@
                         <div>
                             <input type="radio" name="size" value="large" />
                             <label class="px-1 text-sm font-medium text-gray-500">Large</label>
-                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="flavorChoice" class="block mb-2 text-sm font-medium text-gray-500">Add a Flavor</label>
+                        <select id="flavorChoice" name="flavor" class="w-full p-2.5 text-sm font-medium text-gray-500 border border-gray-300 bg-gray-50 rounded-md">
+                            <option value="">None</option>
+                            <option value="Almond">Almond</option>
+                            <option value="Butterscotch">Butterscotch</option>
+                            <option value="Caramel">Caramel</option>
+                            <option value="Irish Cream">Irish Cream</option>
+                            <option value="Mocha">Mocha</option>
+                            <option value="Red Velvet">Red Velvet</option>
+                            <option value="Vanilla">None</option>
+                        </select>
                     </div>
                 </form>
             </div>
