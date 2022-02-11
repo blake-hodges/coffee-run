@@ -25,6 +25,7 @@
             });
             console.log(data);
             fn(data);
+            this.reset();
         });
     }
 
