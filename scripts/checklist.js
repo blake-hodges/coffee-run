@@ -31,6 +31,14 @@
 
     }
 
+    CheckList.prototype.addClickHandler = function (fn) {
+        this.$element.on('click', 'input', function (event) {
+            var email = event.target.value;
+            this.removeRow(email);
+            fn(email);
+        }.bind(this));
+    }
+
     function Row(coffeeOrder) {
         var $div = $('<div></div>', {
             'data-coffee-order': 'checkbox',
