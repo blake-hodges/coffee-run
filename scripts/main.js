@@ -20,5 +20,6 @@
         checkList.addRow.call(checkList, data);
     });
 
+    
 
 })(window);
